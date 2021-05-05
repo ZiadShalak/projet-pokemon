@@ -1,25 +1,12 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import Pokemon from '../components/Pokemon.vue'
-import Retour from '../components/Retour.vue'
+import { createStore } from 'vuex'
 
-const routes = [
-  {
-    path: '/Pokedex',
-    name: 'Pokemon',
-    component: Pokemon,
+export default createStore({
+  state: {
   },
-  /*{ 
-    
-    path: '/',
-    name: 'Retour',
-    component: Retour,
-  }*/
-
-]
-
-const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes
+  mutations: {
+  },
+  actions: {
+  },
+  modules: {
+  }
 })
-
-export default router;
